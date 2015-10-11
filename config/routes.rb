@@ -1,8 +1,32 @@
 Rails.application.routes.draw do
+  resources :artpins
+
+  resources :soundpins
+
+  resources :fashionpins
+
+  resources :sportpins
+
+  resources :phonepins
+
+  resources :travelpins
+
+  resources :gamingpins
+
   resources :pins
 
   devise_for :users
-  root 'pages#home'
+
+  get 'fashion' => 'fashionpins#fashion'
+  get 'gaming' => "gamingpins#gaming"
+  get 'sports' => "sportpins#sports"
+  get 'smartphones' => "phonepins#smartphones"
+  get 'travel' => "travelpins#travel"
+  get 'sound' => "soundpins#sound"
+  get 'art' => "artpins#art"
+  
+  root 'pins#index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

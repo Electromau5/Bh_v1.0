@@ -1,0 +1,9 @@
+<%= image_tag @travelpin.image.url(:medium) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @travelpin.description %>
+</p>
+<%= link_to 'Edit', edit_travelpin_path(@travelpin) %> |
+<%= link_to 'Back', travelpins_path %>

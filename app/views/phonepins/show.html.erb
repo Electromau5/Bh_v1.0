@@ -1,0 +1,9 @@
+<%= image_tag @phonepin.image.url(:medium) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @phonepin.description %>
+</p>
+<%= link_to 'Edit', edit_phonepin_path(@phonepin) %> |
+<%= link_to 'Back', phonepins_path %>

@@ -1,0 +1,16 @@
+<div id="pins" class="transitions-enabled">
+  <% @soundpins.each do |soundpin| %>
+    <div class="box">
+      <%= image_tag soundpin.image.url(:medium) %>
+      <div class="panel-body">
+        <%= soundpin.description %>
+          <%= link_to 'Show', soundpin_path(soundpin) %>
+          <%= link_to 'Edit', edit_soundpin_path(soundpin) %>
+          <%= link_to 'Destroy', soundpin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New Ad", new_soundpin_path %>  

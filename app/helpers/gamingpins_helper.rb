@@ -1,0 +1,2 @@
+module GamingpinsHelper
+end

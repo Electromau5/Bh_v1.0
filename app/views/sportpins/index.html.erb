@@ -1,0 +1,16 @@
+<div id="pins" class="transitions-enabled">
+  <% @sportpins.each do |sportpin| %>
+    <div class="box">
+      <%= image_tag sportpin.image.url(:medium) %>
+      <div class="panel-body">
+        <%= sportpin.description %>
+          <%= link_to 'Show', sportpin_path(sportpin) %>
+          <%= link_to 'Edit', edit_sportpin_path(sportpin) %>
+          <%= link_to 'Destroy', sportpin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New Ad", new_sportpin_path %>  

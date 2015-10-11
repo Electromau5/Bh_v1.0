@@ -1,0 +1,9 @@
+<%= image_tag @gamingpin.image.url(:medium) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gamingpin.description %>
+</p>
+<%= link_to 'Edit', edit_gamingpin_path(@gamingpin) %> |
+<%= link_to 'Back', gamingpins_path %>

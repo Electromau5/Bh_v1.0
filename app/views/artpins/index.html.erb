@@ -1,0 +1,16 @@
+<div id="pins" class="transitions-enabled">
+  <% @artpins.each do |artpin| %>
+    <div class="box">
+      <%= image_tag artpin.image.url(:medium) %>
+      <div class="panel-body">
+        <%= artpin.description %>
+          <%= link_to 'Show', artpin_path(artpin) %>
+          <%= link_to 'Edit', edit_artpin_path(artpin) %>
+          <%= link_to 'Destroy', artpin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New Ad", new_artpin_path %>  

@@ -1,0 +1,16 @@
+<div id="pins" class="transitions-enabled">
+  <% @phonepins.each do |phonepin| %>
+    <div class="box">
+      <%= image_tag phonepin.image.url(:medium) %>
+      <div class="panel-body">
+        <%= phonepin.description %>
+          <%= link_to 'Show', phonepin_path(phonepin) %>
+          <%= link_to 'Edit', edit_phonepin_path(phonepin) %>
+          <%= link_to 'Destroy',phonepin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New Ad", new_phonepin_path %>  

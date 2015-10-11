@@ -1,0 +1,2 @@
+module FashionpinsHelper
+end

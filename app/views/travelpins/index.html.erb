@@ -1,0 +1,16 @@
+<div id="pins" class="transitions-enabled">
+  <% @travelpins.each do |tpin| %>
+    <div class="box">
+      <%= image_tag tpin.image.url(:medium) %>
+      <div class="panel-body">
+        <%= tpin.description %>
+          <%= link_to 'Show', travelpin_path(tpin) %>
+          <%= link_to 'Edit', edit_travelpin_path(tpin) %>
+          <%= link_to 'Destroy', tpin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New Ad", new_travelpin_path %>  

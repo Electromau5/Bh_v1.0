@@ -1,0 +1,9 @@
+<%= image_tag @artpin.image.url(:medium) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @artpin.description %>
+</p>
+<%= link_to 'Edit', edit_artpin_path(@artpin) %> |
+<%= link_to 'Back', artpins_path %>

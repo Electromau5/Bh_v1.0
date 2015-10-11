@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+*= require_self
+*= require 'masonry/basic'
+*= require 'masonry/centered'
+*= require 'masonry/fluid'
+*= require 'masonry/gutters'
+*= require 'masonry/infinitescroll'
+*= require_tree .
+  */
+.division
+{
+	float:left;
+	position: relative;
+	border-radius: 30px;
+	border: 1px solid black;
+	padding: 14px 71px;
+	font-color: #000000;
+}
+.division:hover 
+{
+	background:#4A97CC;
+	cursor: pointer;
+}
+
+.division_head
+{
+	width: 100%;
+}
+.user_division
+{
+	position:relative;
+	border-radius: 10px;
+	border-color: #4a97cc !important;
+	border-style: solid;
+	border: 1px solid black;
+	padding: 0px 35px !important;
+	margin-right: 19px;
+	text-align: center !important;
+
+}
+.user_division
+{
+	cursor: pointer;
+}

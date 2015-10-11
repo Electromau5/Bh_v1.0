@@ -1,0 +1,9 @@
+<%= image_tag @soundpin.image.url(:medium) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @soundpin.description %>
+</p>
+<%= link_to 'Edit', edit_soundpin_path(@soundpin) %> |
+<%= link_to 'Back', soundpins_path %>

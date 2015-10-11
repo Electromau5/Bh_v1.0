@@ -1,0 +1,16 @@
+<div id="pins" class="transitions-enabled">
+  <% @fashionpins.each do |fashionpin| %>
+    <div class="box">
+      <%= image_tag fashionpin.image.url(:medium) %>
+      <div class="panel-body">
+        <%= fashionpin.description %>
+          <%= link_to 'Show', fashionpin_path(fashionpin) %>
+          <%= link_to 'Edit', edit_fashionpin_path(fashionpin) %>
+          <%= link_to 'Destroy', fashionpin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New Ad", new_fashionpin_path %>  
