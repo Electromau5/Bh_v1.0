@@ -5,12 +5,11 @@
       <div class="panel-body">
         <%= gamepin.description %>
           <%= link_to 'Show', gamingpin_path(gamepin) %>
-          <%= link_to 'Edit', edit_gamingpin_path(gamepin) %>
-          <%= link_to 'Destroy', gamepin, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Edit', edit_gamingpin_path(gamepin) %>
+            <%= link_to 'Destroy', gamepin, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
-    </div>
-  <% end %>
-</div>
+  </div>
+     <% end %>
 </div>
 
 <%= link_to "New Ad", new_gamingpin_path %>  

@@ -4,6 +4,8 @@
       <%= image_tag phonepin.image.url(:medium) %>
       <div class="panel-body">
         <%= phonepin.description %>
+        
+        
           <%= link_to 'Show', phonepin_path(phonepin) %>
           <%= link_to 'Edit', edit_phonepin_path(phonepin) %>
           <%= link_to 'Destroy',phonepin, method: :delete, data: { confirm: 'Are you sure?' } %>

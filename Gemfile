@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'paperclip', '~> 4.3.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'devise', '~> 3.5.2'
+gem 'ratyrate'
 
 group :development, :test do
   

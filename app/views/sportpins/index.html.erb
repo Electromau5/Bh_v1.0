@@ -4,6 +4,7 @@
       <%= image_tag sportpin.image.url(:medium) %>
       <div class="panel-body">
         <%= sportpin.description %>
+ 
           <%= link_to 'Show', sportpin_path(sportpin) %>
           <%= link_to 'Edit', edit_sportpin_path(sportpin) %>
           <%= link_to 'Destroy', sportpin, method: :delete, data: { confirm: 'Are you sure?' } %>
